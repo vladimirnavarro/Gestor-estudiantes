@@ -27,7 +27,7 @@ class Estudiante:
     def obtener_historial(self):
         return f"No. Cedula: {self.cedula} - {self.nombre} {self.apellido}"
 
-class App:
+class Gestor_Estudiantes:
     def __init__(self, master):
         self.master = master
         self.master.title("Gestión de Estudiantes")
@@ -101,5 +101,5 @@ class App:
 
 if __name__ == '__main__':
     root = tk.Tk()
-    app = App(root)
+    app = Gestor_Estudiantes(root)
     root.mainloop()
